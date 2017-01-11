@@ -1,7 +1,16 @@
 $blue: #00f;
 
+@define-mixin font-weight {
+    font-weight: bold;
+}
+
 .foo {
     flex: 1;
     transition: .3s all;
     color: $blue;
+
+    & .bar {
+        color: inherit;
+        @mixin font-weight;
+    }
 }
