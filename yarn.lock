@@ -6,6 +6,10 @@ alphanum-sort@^1.0.1, alphanum-sort@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
 
+amdefine@>=0.0.4:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
+
 ansi-regex@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.0.0.tgz#c5061b6e0ef8a81775e50f5d66151bf6bf371107"
@@ -582,6 +586,14 @@ postcss-selector-parser@^2.0.0, postcss-selector-parser@^2.2.2:
     indexes-of "^1.0.1"
     uniq "^1.0.1"
 
+postcss-selector-source@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/postcss-selector-source/-/postcss-selector-source-0.3.0.tgz#f0bf250845c6617c3e0c9b76fc2e51cae0997fdb"
+  dependencies:
+    postcss "^5.0.6"
+    scouter "git://github.com/divshot/scouter.git#master"
+    source-map "^0.4.4"
+
 postcss-simple-vars@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/postcss-simple-vars/-/postcss-simple-vars-3.0.0.tgz#1fa4ccb4b7151d9f0d52fb8ea19a15c1319599d6"
@@ -617,7 +629,7 @@ postcss-zindex@^2.0.1:
     postcss "^5.0.4"
     uniqs "^2.0.0"
 
-postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0.14, postcss@^5.0.16, postcss@^5.0.2, postcss@^5.0.21, postcss@^5.0.4, postcss@^5.0.5, postcss@^5.0.8, postcss@^5.2.4, postcss@^5.2.6, postcss@^5.2.8, postcss@^5.2.9:
+postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0.14, postcss@^5.0.16, postcss@^5.0.2, postcss@^5.0.21, postcss@^5.0.4, postcss@^5.0.5, postcss@^5.0.6, postcss@^5.0.8, postcss@^5.2.4, postcss@^5.2.6, postcss@^5.2.8, postcss@^5.2.9:
   version "5.2.9"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.9.tgz#282a644f92d4b871ade2d3ce8bd0ea46f18317b6"
   dependencies:
@@ -669,6 +681,10 @@ sax@~1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.1.tgz#7b8e656190b228e81a66aea748480d828cd2d37a"
 
+"scouter@git://github.com/divshot/scouter.git#master":
+  version "0.0.1"
+  resolved "git://github.com/divshot/scouter.git#51050e5b8314b18970545263d0a4ea40c4f646a7"
+
 shelljs@^0.7.0:
   version "0.7.6"
   resolved "https://registry.yarnpkg.com/shelljs/-/shelljs-0.7.6.tgz#379cccfb56b91c8601e4793356eb5382924de9ad"
@@ -682,6 +698,12 @@ sort-keys@^1.0.0:
   resolved "https://registry.yarnpkg.com/sort-keys/-/sort-keys-1.1.2.tgz#441b6d4d346798f1b4e49e8920adfba0e543f9ad"
   dependencies:
     is-plain-obj "^1.0.0"
+
+source-map@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.4.4.tgz#eba4f5da9c0dc999de68032d8b4f76173652036b"
+  dependencies:
+    amdefine ">=0.0.4"
 
 source-map@^0.5.3, source-map@^0.5.6:
   version "0.5.6"

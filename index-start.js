@@ -5,9 +5,14 @@ const postcssSimpleVars = require('postcss-simple-vars');
 const postcssNested = require('postcss-nested');
 const postcssMixins = require('postcss-mixins');
 const cssnano = require('cssnano');
+const postcssSelectorSource = require('postcss-selector-source');
 
 fs.readFile('style.source.css', (err, css) => {
-    postcss([autoprefixer, postcssSimpleVars, postcssNested, postcssMixins, cssnano])
+    postcss([postcssSelectorSource({
+    cssRootDir: './',
+    function(selectors) {
+      console.log(selectors);
+  }}), autoprefixer, postcssSimpleVars, postcssNested, postcssMixins, cssnano])
         .process(css, { from: 'style.source.css', to: 'style.css' })
         .then(result => {
             fs.writeFile('style.css', result.css);
