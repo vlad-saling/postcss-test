@@ -1,13 +1,1 @@
-.foo {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    -webkit-transition: .3s all;
-    transition: .3s all;
-    color: #00f;
-}
-
-.foo .bar {
-    color: inherit;
-    font-weight: bold;
-}
+.foo{-webkit-box-flex:1;-ms-flex:1;flex:1;-webkit-transition:all .3s;transition:all .3s;color:#00f}.foo .bar{color:inherit;font-weight:700}h1+p,h2,h3{color:blue}
